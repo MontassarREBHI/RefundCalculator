@@ -68,7 +68,7 @@ const App = () => {
   };
 
   return (
-    <Flex minHeight="100vh" align="center" justify="center" bg="gray.50">
+    <Flex minHeight="100vh" align="center" justify="center" bg="white">
       <Box maxW="md" w="full" p={6} boxShadow="lg" borderRadius="md" bg="white">
         <Heading as="h1" mb={6} textAlign="center">
           Relocation Calculator
@@ -197,23 +197,24 @@ const App = () => {
         {result && (
           <Box mt={6} p={4} bg="gray.100" borderRadius="md" boxShadow="md">
             <Flex justifyContent="space-between" alignItems="center" mb={2}>
-              <Heading as="h3" size="lg">
+              <Heading as="h3" size="md">
                 Calculation Result
               </Heading>
             </Flex>
             <HStack spacing={2}>
-              <Text mr={22}>
-                <strong>Guest Refund:</strong> {result.guestRefund.toFixed(2)}
+              <Text mr={2}>
+                <strong>Guest Refund: </strong>
+                {result.guestRefund.toFixed(2)}
               </Text>
 
-              <Text mr={22}>
-                <strong> Property Invoice:</strong>
+              <Text mr={2}>
+                <strong> Invoice P: </strong>
                 {result.propertyInvoice.toFixed(2)}
               </Text>
               <Tooltip label="Copy the result" aria-label="A tooltip">
                 <IconButton
                   aria-label="Copy result"
-                  icon={<CopyIcon boxSize={24} />}
+                  icon={<CopyIcon boxSize={4} />}
                   onClick={handleCopy}
                   colorScheme="blue"
                   variant="outline"
