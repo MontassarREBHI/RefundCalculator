@@ -99,6 +99,7 @@ const App = () => {
                         <Input
                           {...field}
                           type="number"
+                          step="any"
                           size="lg"
                           variant="outline"
                           focusBorderColor="blue.500"
@@ -121,6 +122,7 @@ const App = () => {
                         <Input
                           {...field}
                           type="number"
+                          step="any"
                           size="lg"
                           variant="outline"
                           focusBorderColor="blue.500"
@@ -145,6 +147,7 @@ const App = () => {
                         <Input
                           {...field}
                           type="number"
+                          step="any"
                           size="lg"
                           variant="outline"
                           focusBorderColor="blue.500"
@@ -168,6 +171,7 @@ const App = () => {
                           {...field}
                           type="number"
                           size="lg"
+                          step="any"
                           variant="outline"
                           focusBorderColor="blue.500"
                         />
