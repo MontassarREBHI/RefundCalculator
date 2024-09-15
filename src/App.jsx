@@ -69,7 +69,14 @@ const App = () => {
 
   return (
     <Flex minHeight="100vh" align="center" justify="center" bg="white">
-      <Box maxW="md" w="full" p={6} boxShadow="lg" borderRadius="md" bg="white">
+      <Box
+        maxW="md"
+        w="full"
+        p={6}
+        boxShadow="2xl"
+        borderRadius="md"
+        bg="white"
+      >
         <Heading as="h1" mb={6} textAlign="center">
           Relocation Calculator
         </Heading>
@@ -86,7 +93,7 @@ const App = () => {
           {({ isSubmitting }) => (
             <Form>
               <VStack spacing={4}>
-                <HStack>
+                <HStack align="start">
                   <Field name="originalPrice">
                     {({ field, form }) => (
                       <FormControl
@@ -134,7 +141,7 @@ const App = () => {
                     )}
                   </Field>
                 </HStack>
-                <HStack>
+                <HStack align="start">
                   <Field name="alternativePrice">
                     {({ field, form }) => (
                       <FormControl
