@@ -69,14 +69,7 @@ const App = () => {
 
   return (
     <Flex minHeight="100vh" align="center" justify="center" bg="white">
-      <Box
-        maxW="md"
-        w="full"
-        p={6}
-        boxShadow="2xl"
-        borderRadius="md"
-        bg="white"
-      >
+      <Box maxW="lg" w="full" p={6} boxShadow="lg" borderRadius="md" bg="white">
         <Heading as="h1" mb={6} textAlign="center">
           Relocation Calculator
         </Heading>
@@ -212,16 +205,17 @@ const App = () => {
                 Calculation Result
               </Heading>
             </Flex>
-            <HStack spacing={2}>
-              <Text mr={2}>
+            <Flex w="full" justifyContent="space-between" alignItems="center">
+              <Text>
                 <strong>Guest Refund: </strong>
                 {result.guestRefund.toFixed(2)}
               </Text>
 
-              <Text mr={2}>
-                <strong> Invoice P: </strong>
+              <Text>
+                <strong>Invoice P: </strong>
                 {result.propertyInvoice.toFixed(2)}
               </Text>
+
               <Tooltip label="Copy the result" aria-label="A tooltip">
                 <IconButton
                   aria-label="Copy result"
@@ -231,7 +225,7 @@ const App = () => {
                   variant="outline"
                 />
               </Tooltip>
-            </HStack>
+            </Flex>
           </Box>
         )}
       </Box>
