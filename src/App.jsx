@@ -68,10 +68,31 @@ const App = () => {
   };
 
   return (
-    <Flex minHeight="100vh" align="center" justify="center" bg="white">
-      <Box maxW="lg" w="full" p={6} boxShadow="lg" borderRadius="md" bg="white">
-        <Heading as="h1" mb={6} textAlign="center">
-          Relocation Calculator
+    <Flex
+      justifyContent="space-between"
+      minHeight="80vh"
+      alignItems="center"
+      mt={6}
+      p={4}
+    >
+      <Box w="30%" bg="green.100" p={4} borderRadius="md" boxShadow="md">
+        <Text fontSize="lg" fontWeight="bold">
+          Tips on the side:
+        </Text>
+
+        <Text fontSize="md" mt={12}>
+          Make sure the prices you're entering are in the same currency : "that
+          of the original"
+        </Text>
+
+        <Text fontSize="md" mt={12} mb={8}>
+          Ensure any excluded taxes/fees are accounted on both sides
+        </Text>
+      </Box>
+
+      <Box w="35%" bg="white" p={4} borderRadius="md" boxShadow="xl">
+        <Heading as="h3" size="lg" textAlign="center" mb={6}>
+          Relocation Cost Calculator
         </Heading>
         <Formik
           initialValues={{
@@ -228,6 +249,20 @@ const App = () => {
             </Flex>
           </Box>
         )}
+      </Box>
+
+      <Box w="30%" bg="green.100" p={4} borderRadius="md" boxShadow="md">
+        <Text fontSize="lg" fontWeight="bold">
+          Tips on the other side:
+        </Text>
+        <Text fontSize="md" mt={12}>
+          Other eligible to refund costs can be included in the alternative cost
+          : such as taxi or parking
+        </Text>
+
+        <Text fontSize="md" mt={12} mb={8}>
+          Always refer to official resources or seek support in cases of doubt
+        </Text>
       </Box>
     </Flex>
   );
