@@ -81,12 +81,11 @@ const App = () => {
         </Text>
 
         <Text fontSize="md" mt={12}>
-          Make sure the prices you're entering are in the same currency : "that
-          of the original"
+          Make sure you're using the same currency on both ends : the original RES's currency
         </Text>
 
         <Text fontSize="md" mt={12} mb={8}>
-          Ensure any excluded taxes/fees are accounted on both sides
+          Ensure any excluded taxes/fees are considered in each of the costs  
         </Text>
       </Box>
 
@@ -256,8 +255,7 @@ const App = () => {
           Tips on the other side:
         </Text>
         <Text fontSize="md" mt={12}>
-          Other eligible to refund costs can be included in the alternative cost
-          : such as taxi or parking
+          If we need to cover other costs such as transport or parking you may include it in the alt cost
         </Text>
 
         <Text fontSize="md" mt={12} mb={8}>
