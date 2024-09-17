@@ -75,7 +75,7 @@ const App = () => {
       mt={6}
       p={4}
     >
-      <Box w="30%" bg="green.100" p={4} borderRadius="md" boxShadow="md">
+      <Box w="30%" bg="yellow.100" p={4} borderRadius="md" boxShadow="md">
         <Text fontSize="lg" fontWeight="bold">
           Tips on the side:
         </Text>
@@ -250,7 +250,7 @@ const App = () => {
         )}
       </Box>
 
-      <Box w="30%" bg="green.100" p={4} borderRadius="md" boxShadow="md">
+      <Box w="30%" bg="yellow.100" p={4} borderRadius="md" boxShadow="md">
         <Text fontSize="lg" fontWeight="bold">
           Tips on the other side:
         </Text>
